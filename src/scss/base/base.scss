@@ -1,0 +1,91 @@
+
+$brand-primary:         #E91D2C;
+$primary:               #E91D2C; 
+$black:                 #1A1A1A;
+$withe:                 #ffffff;
+
+$btn-primary-bg:                $brand-primary !default;
+$btn-border-radius:             0px !default;
+$input-bg:                      transparent;
+$input-border-radius:           0px !default;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/utilities/api";
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-s-base;
+  color: $text-color;
+  background-color: $body-bg;
+}
+
+.h-min-600{
+  min-height: 600px;
+}
+
+.home {
+  &--hero{
+    color: $white;
+    background-image: url('../img/bg_banner_home.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    &-form{
+      .form-control{
+        border-width: 0px;
+        border-bottom-width: 1px;
+      }
+    }
+    h1{
+      color: $white;
+      font-size: 56px;
+    }
+  }
+}
+
+.login {
+
+}
+
+footer {
+  background: $black;
+  color: $gray-lighter;
+  .nav {
+    .label{
+      display: block; 
+    }
+    .nav-link {
+      color: $gray-lighter;
+    }
+  }
+  .link-email {
+    padding-left: 1rem; 
+    color: $gray-lighter;
+  }
+  .divider {
+    border-top: $gray-lighter 1px solid;
+  }
+
+}

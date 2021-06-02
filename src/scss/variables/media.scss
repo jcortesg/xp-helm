@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+//COLORS
+$brand-primary:         #E91D2C;
+$black:                 #1A1A1A;
+$withe:                 #ffffff;
+
+$gray-base:             #000 !default;
+$gray-darker:           #262525 !default;
+$gray-dark:             #575756 !default;
+$gray-lighter:          #E5E0DC;
+
+$body-bg:               #fff !default;
+
+$text-color:            $gray-dark    !default;
+$headings-color:        $gray-darker  !default;
+
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+//== Typography
+$font-family-sans-serif:  'Rubik', sans-serif;
+$font-family-base:        $font-family-sans-serif ;
+
+$font-s-base:          14px !default;
+
+// MEDIA
+$mediaXS: 0 ;
+$mediaSM: 768px;
+$mediaMD: 1024px;
+$mediaLG: 1366px;
+$mediaXL: 1920px;
+$mediaMAX: 99999px;
