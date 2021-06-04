@@ -92,6 +92,21 @@ body {
   }
 }
 
+.block-list {
+  @extend .my-3;
+  list-style-type: none;
+  .block-item{
+    max-width: 400px;
+    @extend .py-3;
+    @extend .my-3;
+    @extend .border;
+    margin: 0 auto;
+    a {
+      color: #575756;
+    }
+  }
+}
+
 footer {
   background: $black;
   color: $gray-lighter;
