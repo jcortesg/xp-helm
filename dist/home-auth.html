@@ -1,6 +1,7 @@
 <html lang="es">
   <head>
     <title>Helm Compensación</title>
+    <script src="../js/app.js"></script>
   <link href="./assets/css/styles.css" rel="stylesheet"></head>
   <body>
     <nav class="navbar navbar-expand-lg border-bottom navbar-light">
@@ -38,10 +39,96 @@
     <div class="container">
       <div class="row h-min-600 justify-content-center">
         <div class="col-md-10">
-          <h3 class="mt-5">Normatividad cambiaria</h3>
+          <div class="banner-alert justify-content-center p-4 my-5">
+            <h3>¿Sabía que?</h3>
+            <ul>
+              <li>
+                A través de la cuenta de compensación puede 
+                realizar pagos en otras monedas diferentes 
+                del dólar americano.
+              </li>
+              <li>
+                Si estos pagos son en euro, libra esterlina, 
+                dólar canadiense, dólar australiano y peso 
+                mexicano y su equivalencia es igual o superior a USD 
+                50.000, usted puede NEGOCIAR LA TASA
+              </li>
+            </ul>
+            <div class="text-center">
+              <a>
+                <strong>
+                Para mayor información contacte a su gerente 
+                de cuenta o haga clic aquí
+                </strong>
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="col-md-10 pb-5">
+          <h3 class="mt-5">Normatividad cambiaria</h3>
+          <ul class="nav nav-tabs mt-5 mb-3">
+            <li class="nav-item">
+              <a class="nav-link active"
+                 aria-current="page" href="#">
+                Normatividad cambiaria
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Información exógena cambiaria
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active">
+              <ul>
+                <li class="my-3" >
+                  <a href="">Consulte aquí </a>
+                  el último compendio de la Resolución Externa No. 1 de
+                  mayo 25 de 2018 - Régimen de Cambios Internacionales.
+                </li>
+                <li class="my-3">
+                  <a href="">Consulte aquí</a>
+                  el último compendio de la Circular 
+                  Reglamentaría DCIN 83 de septiembre de 2019 - Procedimientos Aplicables a las Operaciones de Cambio.
+                </li>
+                <li class="my-3">
+                  <a href="">Descargue aquí</a>
+                  la última Cartilla Educativa para manejo de Cuentas de Compensación 
+                  expedida por el Banco de la República.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
     <footer class="py-3">
   <div class="container">
     <div class="row">
@@ -73,8 +160,8 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-4 d-flex flex-row-reverse">
-        <img src="assets/img/fdic.png"> 
+      <div class="col-md-3 d-flex flex-row-reverse">
+        <img height="60px" src="assets/img/fdic.png"> 
       </div>
     </div>
     <div class="row py-4">
@@ -96,6 +183,16 @@
       <li class="nav-item">
         <a class="nav-link" href="/requerimientos.html">
           Requerimientos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sabia-que.html">
+          Sabía usted que 
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/acuerdo-servicios.html">
+          Acuerdo de uso
         </a>
       </li>
     </ul>
