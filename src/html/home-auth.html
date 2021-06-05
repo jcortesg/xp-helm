@@ -1,14 +1,13 @@
 <html lang="es">
   <head>
     <title>Helm Compensación</title>
-    <script src="../js/app.js"></script>
   </head>
   <body>
     <include>_navbar_links.html</include>
     <div class="container">
       <div class="row h-min-600 justify-content-center">
         <div class="col-md-10">
-          <div class="banner-alert justify-content-center p-4 my-5">
+          <div class="import 'bootstrap/js/dist/alert'; justify-content-center p-4 my-5">
             <h3>¿Sabía que?</h3>
             <ul>
               <li>
@@ -26,8 +25,8 @@
             <div class="text-center">
               <a>
                 <strong>
-                Para mayor información contacte a su gerente 
-                de cuenta o haga clic aquí
+                  Para mayor información contacte a su gerente 
+                  de cuenta o haga clic aquí
                 </strong>
               </a>
             </div>
@@ -36,21 +35,39 @@
 
         <div class="col-md-10 pb-5">
           <h3 class="mt-5">Normatividad cambiaria</h3>
-          <ul class="nav nav-tabs mt-5 mb-3">
-            <li class="nav-item">
-              <a class="nav-link active"
-                 aria-current="page" href="#">
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button 
+                class="nav-link active" 
+                id="home-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#home" 
+                type="button" role="tab" 
+                              aria-controls="home" 
+                              aria-selected="true">
                 Normatividad cambiaria
-              </a>
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-item" role="presentation">
+              <button 
+                class="nav-link" 
+                id="profile-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#profile" 
+                type="button" role="tab" 
+                              aria-controls="profile" 
+                              aria-selected="false">
                 Información exógena cambiaria
-              </a>
+              </button>
             </li>
           </ul>
-          <div class="tab-content">
-            <div class="tab-pane active">
+          <div class="tab-content" id="myTabContent">
+            <div 
+              class="tab-pane fade show active"
+              id="home" 
+              role="tabpanel" 
+              aria-labelledby="home-tab">
               <ul>
                 <li class="my-3" >
                   <a href="">Consulte aquí </a>
@@ -69,13 +86,83 @@
                 </li>
               </ul>
             </div>
+            <div 
+              class="tab-pane fade" 
+              id="profile" 
+              role="tabpanel" 
+              aria-labelledby="profile-tab">
+
+              <ul>
+                <li class="my-3">
+                  <a href="">Descargue aquí</a>
+                  la Resolución Número 000055 de Octubre 3 de 2016, 
+                  mediante la cual se establece la nueva reglamentación que permita 
+                  a los IMC y a los titulares de cuentas de compensación, presentar a la 
+                  DIAN la información relacionada con los documentos aduaneros, o los que
+                  hagan sus veces, y los valores pagados a la mercancía amparada en dichos documentos.
+                </li>
+                <li class="my-3">
+                  <a href="">Descargue aquí</a>
+                  la Resolución Número 000099 de Septiembre 17 
+                  de 2015 vigente a partir de la fecha de su publicación
+                  en el Diario Oficial (Septiembre 23 de 2015) mediante la 
+                  cual la DIAN modificó el listado de los numertales 
+                  cambiarios a informar a dicha entidad y, por consiguiente,
+                  la información relacionada con las operaciones de cambio
+                  realizadas a través de las Cuentas de Compensación. 
+                </li>
+                <li class="my-3">
+                  <a href="">Descargue aquí</a>
+                  la Resolución 000069 de Octubre 28 de 2019 expedida
+                  por la DIRECCIÓN DE IMPUESTOS y ADUANAS NACIONALES DIAN mediante
+                  la cual se actualizan las tablas de los numerales cambiarios que
+                  deben informarse a dicha entidad a partir de Enero 01 de 2020 y
+                  que modifica los reportes de información exógena cambiaria del 2020, 
+                  iniciando con el trimestres de Enero, Febrero, Marzo que debe efectuarse 
+                  en Abril del presente año.
+
+                  <table class="table my-3">
+                    <thead class="text-center">
+                      <tr class="table-secondary">
+                        <th>Último digito del NIT</th>
+                        <th>Fecha de presentación</th>
+                        <tbody>
+                          <tr>
+                            <td>1 y 2</td>
+                            <td>El décimo (10) y undécimo (11) día hábil de los meses de abril, julio, octubre y enero.</td>
+                          </tr>
+                          <tr>
+                            <td>3 y 4</td>
+                            <td>El duodécimo (12) y decimotercero (13) día hábil de los meses de abril, julio, octubre y enero.</td>
+                          </tr>
+                          <tr>
+                            <td>5 y 6</td>
+                            <td>El decimocuarto (14) y decimoquinto (15) día hábil de los meses de abril, julio, octubre y enero. </td>
+                          </tr>
+                          <tr>
+                            <td>7 y 8</td>
+                            <td>El decisexto (16) y decimoséptimo (17) día hábil de los meses de abril, julio, octubre y enero. </td>
+                          </tr>
+                          <tr>
+                            <td>9 y 0</td>
+                            <td>El decimoctavo (18) y decimonoveno (19) día hábil de los meses de abril, julio, octubre y enero.</td>
+                          </tr>
+                        </tbody>
+                      </tr>
+                    </thead>
+                  </table>
+                </li>
+              </ul>
+
+            </div>
+
           </div>
         </div>
 
 
       </div>
-    </div>
-    <include>_modal.html</include> 
-    <include>_footer.html</include> 
+      </div>
+      <include>_modal.html</include> 
+      <include>_footer.html</include> 
   </body>
 </html>

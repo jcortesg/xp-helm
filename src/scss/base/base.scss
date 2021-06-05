@@ -22,6 +22,9 @@ $accordion-button-active-bg:    transparent;
 $accordion-color:               #262525;
 $accordion-button-active-color: #262525;
 
+$modal-header-border-width:   0px;
+$modal-footer-border-width:   0px;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
@@ -40,6 +43,8 @@ $accordion-button-active-color: #262525;
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/utilities/api";
 
 * {
@@ -95,6 +100,10 @@ body {
   .active {
     border-bottom: 2px solid #97999B;
   }
+}
+
+.nav-tabs .nav-link.active{
+  border-color: $brand-primary; 
 }
 
 .block-list {
