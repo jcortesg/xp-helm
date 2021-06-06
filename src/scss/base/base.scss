@@ -1,9 +1,11 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
 
 $brand-primary:         #E91D2C;
 $primary:               #E91D2C; 
 $black:                 #1A1A1A;
 $withe:                 #ffffff;
 
+$font-size-base:                .87rem;
 $btn-primary-bg:                $brand-primary !default;
 $btn-border-radius:             0px !default;
 $input-bg:                      transparent;
@@ -16,14 +18,17 @@ $nav-tabs-link-active-color:    #262525;
 $nav-link-color:                #262525;
 $nav-tabs-border-width:         0px;
 $nav-link-padding-x:            3rem;
-$nav-link-font-size:            16px;
 
 $accordion-button-active-bg:    transparent;
 $accordion-color:               #262525;
-$accordion-button-active-color: #262525;
+$accordion-icon-color:          #262525;
+$accordion-icon-active-color:   $brand-primary;
+$accordion-button-active-color: $brand-primary;
 
 $modal-header-border-width:   0px;
 $modal-footer-border-width:   0px;
+
+$table-border-color:          #E1E4E5;
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -37,15 +42,19 @@ $modal-footer-border-width:   0px;
 @import "~bootstrap/scss/grid";
 
 @import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/helpers";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/close";
 @import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/accordion";
 @import "~bootstrap/scss/modal";
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/utilities/api";
+
 
 * {
     box-sizing: border-box;
@@ -101,7 +110,9 @@ body {
     border-bottom: 2px solid #97999B;
   }
 }
-
+.link-back{
+  color: #393939;
+}
 .nav-tabs .nav-link.active{
   border-color: $brand-primary; 
 }
@@ -121,6 +132,32 @@ body {
   }
 }
 
+.account-info{
+  color: #262525;
+  span{
+    display: block;
+  }
+  .title-aux{
+    font-size: 18px;
+    color: #97999B;
+  }
+  .title-label{
+    font-size: 18px;
+      } 
+  .label {
+    color: #575756;
+    display: block;
+  }
+  .label-value{
+    display: block;
+  }
+}
+
+.tabe-gray{
+  background: #575756;
+  color: #ffffff;
+  font-weight: bold; 
+}
 footer {
   background: $black;
   color: $gray-lighter;
@@ -129,6 +166,8 @@ footer {
       display: block; 
     }
     .nav-link {
+      font-size: 14px;
+      padding: 0.5rem 2rem;
       color: $gray-lighter;
     }
   }
